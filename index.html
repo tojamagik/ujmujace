@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="theme-color" content="#5dade2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Ujmujące - Gabinet Psychologiczny">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+  <title>Ujmujące - Gabinet Psychologiczny Karina Kowalska</title>
+  <meta name="description" content="Profesjonalna pomoc psychologiczna z wieloletnim doświadczeniem. Terapia poznawczo-behawioralna, diagnoza dzieci i młodzieży, wizyty online i domowe.">
+  <meta name="keywords" content="psycholog, psychoterapia, terapia poznawczo-behawioralna, gabinet psychologiczny, wizyty online, diagnoza dzieci, ADHD, lęk, depresja, Katowice">
+  <meta name="author" content="Karina Kowalska">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ujmujące - Gabinet Psychologiczny">
+  <meta property="og:description" content="Profesjonalna pomoc psychologiczna z wieloletnim doświadczeniem. Specjalizujemy się w terapii poznawczo-behawioralnej, diagnozie dzieci i młodzieży.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles/globals.css">
+  
+  <!-- Prevent flash of unstyled content -->
+  <style>
+    html {
+      overflow-x: hidden;
+    }
+    
+    body {
+      overflow-x: hidden;
+      min-width: 320px;
+    }
+    
+    /* Loading spinner */
+    .loading-spinner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #fefefe 0%, #faf8f5 100%);
+    }
+    
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #d6eaf8;
+      border-top: 4px solid #5dade2;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Prevent horizontal scroll on any element */
+    *, *::before, *::after {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    
+    /* Ensure responsive images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Prevent overflow on containers */
+    .container, .max-w-7xl, .max-w-6xl, .max-w-5xl, .max-w-4xl, .max-w-3xl, .max-w-2xl, .max-w-xl {
+      max-width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    @media (max-width: 640px) {
+      .container, .max-w-7xl, .max-w-6xl, .max-w-5xl, .max-w-4xl, .max-w-3xl, .max-w-2xl, .max-w-xl {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
